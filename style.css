@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --font-size: 16px;
+}
+
+body{
+    
+background-color: var(--yellow);
+font-family: "Figtree", sans-serif;
+font-weight: 500;
+padding: 24px;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+    overflow: hidden;
+    width: 100%;
+    max-width: 376px;
+    border: 1px solid black;
+    /* margin: 100px auto 50px; */
+     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */ 
+    /* align-items: center; */
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 8px 8px 0px 0px black;
+    background-color: var(--white);
+    margin: 0;
+}
+
+/* .img-part img{
+border-radius: 7px;
+width: 100%;
+padding: 0.9rem;
+} */
+
+.img-part {
+    padding: 1rem; 
+    width: 100%;
+}
+
+.img-part img {
+    width: 100%;
+    border-radius: 10px; /* Now the corners will be visible */
+    display: block; 
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px ;
+    padding: 0.9rem;
+    align-items: flex-start;
+    line-height: 1.5rem;
+}
+
+#mini-info{
+    font-size: 10px;
+    background-color: var(--yellow);
+    font-weight: 800;
+    padding:6.3px;
+    border: none;
+    border-radius: 5px;
+}
+
+#when{
+    font-size: 16px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+#card-title{
+    font-size: 1.5rem;
+    font-weight: 800px;
+}
+
+#card-content{
+    font-size: 16px;
+    color: var(--gray-500);
+    margin-bottom: 12px;
+}
+
+
+
+.end{
+
+    display: flex;  
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#pfp{
+    height: 35px;
+}
+
+#last{
+    font-weight: 800;
+}
+
+/* end */
+
+.ending{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.attribution{
+    margin: 30px;
+}
+
+
+/* last part */
+#card-title:hover {
+    color: var(--yellow);
+    cursor: pointer; 
+}
